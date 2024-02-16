@@ -19,7 +19,8 @@ def main():
     pages = [ "", "forum", \
               "css/style.css", "css/code-lua.css", \
               "js/luaEngine.js", "js/index.js", \
-              "img/logo.png", "img/discord.png", "img/cogwheel_a.png", "img/cogwheel_a.png" ]
+              "img/logo.png", "img/noise.png", "img/discord.png", "img/cogwheel_b.png", "img/cogwheel_a.png", \
+              "img/icons/kindasus.webp" ]
 
     # We need to make sure this exists
     #if not os.path.exists("docs"):
@@ -30,6 +31,8 @@ def main():
         os.makedirs("js")
     if not os.path.exists("img"):
         os.makedirs("img")
+    if not os.path.exists("img/icons"):
+        os.makedirs("img/icons")
     if not os.path.exists("forum"):
         os.makedirs("forum")
 
