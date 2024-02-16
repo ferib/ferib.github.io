@@ -19,7 +19,7 @@ def main():
     pages = [ "", "forum", \
               "css/style.css", "css/code-lua.css", \
               "js/luaEngine.js", "js/index.js", \
-              "img/logo.png", "img/noise.png", "img/discord.png", "img/cogwheel_b.png", "img/cogwheel_a.png", \
+              "img/logo.png", "img/dark_banner2.png", "img/noise.png", "img/discord.png", "img/cogwheel_b.png", "img/cogwheel_a.png", \
               "img/icons/kindasus.webp" ]
 
     # We need to make sure this exists
