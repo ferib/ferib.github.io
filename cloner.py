@@ -22,16 +22,16 @@ def main():
               "img/logo.png", "img/discord.png", "img/cogwheel_a.png", "img/cogwheel_a.png" ]
 
     # We need to make sure this exists
-    if not os.path.exists("docs"):
-        os.makedirs("docs/")
-    if not os.path.exists("docs/css"):
-        os.makedirs("docs/css")
-    if not os.path.exists("docs/js"):
-        os.makedirs("docs/js")
-    if not os.path.exists("docs/img"):
-        os.makedirs("docs/img")
-    if not os.path.exists("docs/forum"):
-        os.makedirs("docs/forum")
+    #if not os.path.exists("docs"):
+    #    os.makedirs("docs/")
+    if not os.path.exists("css"):
+        os.makedirs("css")
+    if not os.path.exists("js"):
+        os.makedirs("js")
+    if not os.path.exists("img"):
+        os.makedirs("img")
+    if not os.path.exists("forum"):
+        os.makedirs("forum")
 
     for page in pages:
         url = base_url + page
@@ -42,7 +42,7 @@ def main():
             elif page == "forum":
                 page = "forum/index.html"
 
-            with open("docs/" + page, "w", encoding="utf-8") as file:
+            with open(page, "w", encoding="utf-8") as file:
                 file.write(content)
             print(f"Page '{url}' downloaded successfully.")
 
